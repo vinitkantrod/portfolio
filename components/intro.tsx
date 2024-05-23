@@ -4,10 +4,14 @@ import React from 'react'
 import Image from 'next/image'
 import VinitImage from '@/public/vinit.jpeg';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
+import { BsArrowRight, BsLinkedin } from "react-icons/bs";
+import { HiDownload } from "react-icons/hi";
+import { FaGithubSquare } from "react-icons/fa";
 
 export default function Intro() {
     return (
-        <section>
+        <section className="mb-28 max-w-[50rem] text-center sm:mb-0">
             <div className="flex items-center justify-center">
                 <div className="relative">
                     <motion.div
@@ -39,12 +43,37 @@ export default function Intro() {
                     >👋</motion.span>
                 </div>
             </div>
-            <p>
+            <motion.p className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-3xl"
+                initial={{ y: 100, opacity: 0 }}
+                animate={{ opacity: 1, y: 0 }}
+            >
                 <span className="font-bold">Hello, I'm Vinit Kantrod</span> I'm a {" "}
                 <span className="font-bold">backend engineer</span> with{" "}
                 <span className="font-bold">9 years</span> of experience. I enjoy building <span className="italic">distributed systems</span>. My focus is{" "}
-                <span className="underline">Java, Python, and Golang</span>
-            </p>
+                <span className="underline">Java, Python, and Golang</span>.
+            </motion.p>
+
+            <motion.div className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
+                initial={{ opacity: 0, y: 100 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{
+                    delay: 0.1
+                }}
+            >
+                <Link href="#contact" className="group bg-gray-900 text-white px-7 py-3 flex items-center rounded-full gap-2 outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+                >Contact me here <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition"/>
+                </Link>
+
+                <a className="group bg-white px-7 py-3 flex items-center rounded-full gap-2 outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10" href="/CV.pdf" download>Download CV <HiDownload className="opacity-60 group-hover:translate-y-1 transition"/>
+                </a>
+
+                <a className="bg-white p-4 flex text-gray-700 items-center rounded-full gap-2  focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10" href="https://linkedin.com/in/vinitkantrod" target="_blank">
+                    <BsLinkedin />
+                </a>
+                <a className="bg-white p-4 flex text-gray-700 items-center rounded-full gap-2 text-[1.35rem] focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10" href="https://github.com/vinitkantrod" target="_blank">
+                    <FaGithubSquare />
+                </a>
+            </motion.div>
         </section>
     )
 }

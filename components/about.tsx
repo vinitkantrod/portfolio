@@ -30,7 +30,7 @@ export default function About() {
                                 learn new technologies. I am currently looking for a{" "}
                                 <span className="font-medium">full-time position</span> as a staff software
                                 engineer.</p><p>
-                                <span className="italic">When I'm not coding</span>, I enjoy playing
+                                <span className="italic">When I&lsquom not coding</span>, I enjoy playing
                                 playing sports like badminton, cricket, football, table tennis, reading books, and  watching movies. I also enjoy{" "}
                                 <span className="font-medium">learning new things</span>. I have an interest to learn an instrument{" "}
                                 and sing in an auditorium.</p>

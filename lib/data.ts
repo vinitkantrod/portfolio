@@ -35,28 +35,76 @@ export const links = [
 
 export const experiencesData = [
     {
-        title: "Graduated bootcamp",
-        location: "Miami, FL",
+        title: "M.Tech in Computer Science",
+        location: "Vellore Insititute of Technology",
         description:
-            "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+            "IBM India Hackathon Winner - 2015. Build local Inventory app for users to check what items are available in their surroundings. GSOC'15 - worked on libvert virtulazation API.",
         icon: React.createElement(LuGraduationCap),
-        date: "2019",
+        date: "June, 2013 - June, 2015",
     },
     {
-        title: "Front-End Developer",
-        location: "Orlando, FL",
+        title: "Internship",
+        location: "Nextwave Datascience",
         description:
-            "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+            "Build datascience dashboard using python and mysql. Worked with Andhra Pradesh Govt to find the suspected list of terorrist involved in the bomb blast.",
+        icon: React.createElement(LuGraduationCap),
+        date: "Nov, 2014 - Nov, 2015",
+    },
+    {
+        title: "Software Engineer",
+        location: "Rapido",
+        description:
+            "Founding Engineer. Build multiple micro-services like Coupons, Referrals, Payments, Redeem, pricing and scaled to millions of users. Improved riders retaintion rate from 15% to 70% and improved ops efficiency. Helped in architecting the system and leading a team.",
+        icon: React.createElement(LuGraduationCap),
+        date: "Nov, 2015 - July, 2018",
+    },
+    {
+        title: "Senior Software Engineer",
+        location: "VOGO",
+        description:
+            "Helped break down monolithic architecture into microservice architecture. Architected Data pipleine system to handle, process, and analyze 300k/sec IoT data events.",
+        icon: React.createElement(LuGraduationCap),
+        date: "July, 2018 - Sep, 2019",
+    },
+    {
+        title: "Co-founder and CTO (accquired)",
+        location: "Stringz pvt ltd",
+        description:
+            "A Dating platform which help like minded people to connect and socialise.",
         icon: React.createElement(CgWorkAlt),
         date: "2019 - 2021",
     },
     {
-        title: "Full-Stack Developer",
-        location: "Houston, TX",
+        title: "Team Lead",
+        location: "Bounce",
         description:
-            "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+            "Launched Truck management system to improve revenue by 100%. Improved engineers productivity by building central caching system.",
         icon: React.createElement(FaReact),
-        date: "2021 - present",
+        date: "Oct, 2019 - Feb, 2021",
+    },
+    {
+        title: "Tech Lead",
+        location: "Ula",
+        description:
+            "Mentored and managed multiple pods of 15+ Engineers. Improved cutomer experience by reducing Order API latency by 250%. Re-achitect the core supply chain system. Build In house Warehouse Management System and improved operational efficiency by 50%.",
+        icon: React.createElement(FaReact),
+        date: "Mar, 2021 - Jan, 2023",
+    },
+    {
+        title: "SDE-3",
+        location: "Cashfree Payments",
+        description:
+            "Improved developer productivity by breaking monolithic service into microservice for global collect domain. Automated manual processes and improved Authentication and logging for the global collect system.",
+        icon: React.createElement(FaReact),
+        date: "Aug, 2023 - Jan, 2024",
+    },
+    {
+        title: "Freelance",
+        location: "NGO",
+        description:
+            "Build student councelling platform for the underpreviledge students from tier-2 and tier-3 government schools for an non profit organization. Worked as a full stack developer with react for frontend and java for backend.",
+        icon: React.createElement(FaReact),
+        date: "Jan, 2024 - Present",
     },
 ] as const;
 
